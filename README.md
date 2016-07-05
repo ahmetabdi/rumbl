@@ -1,6 +1,6 @@
 # Rumbl
 
-To the Phoenix app:
+To run the Phoenix app:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
