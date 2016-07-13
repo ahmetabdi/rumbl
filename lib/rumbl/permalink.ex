@@ -1,7 +1,7 @@
 defmodule Rumbl.Permalink do
   @behaviour Ecto.Type
 
-  def type, do: id
+  def type, do: :id
 
   def cast(binary) when is_binary(binary) do
     case Integer.parse(binary) do
