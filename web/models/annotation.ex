@@ -4,7 +4,7 @@ defmodule Rumbl.Annotation do
   schema "annotations" do
     field :body, :string
     field :at, :integer
-    belongs_to :" user", :"Elixir.Rumbl. user"
+    belongs_to :user, Rumbl.User
     belongs_to :video, Rumbl.Video
 
     timestamps()

@@ -5,13 +5,13 @@ defmodule Rumbl.Permalink do
 
   def cast(binary) when is_binary(binary) do
     case Integer.parse(binary) do
-      {int, _} when int > 0 -> {:ok, int}
+      {int, _} when 0 < int -> {:ok, int}
       _ -> :error
     end
   end
 
   def cast(integer) when is_integer(integer) do
-    {:ok, :integer}
+    {:ok, integer}
   end
 
   def cast(_) do
